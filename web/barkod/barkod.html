@@ -1,17 +1,130 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.3/JsBarcode.all.min.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-</head>
-<body>
-  
-  
-  <svg id="barcode"></svg>
-  <script>
-  JsBarcode("#barcode", "deneme");
-  </script>
-</body>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <title>JK</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.3/JsBarcode.all.min.js"></script>
+ 
+    <style>
+        html{
+            font-family: Arial,'Arial Narrow Bold', sans-serif;
+        }
+        .sabitWidth{
+            width: 270px;
+        }
+        .buyukbaslik{
+            font-weight:bold;
+            font-size:16px
+        }
+        .ortabaslik{
+            font-weight:bold;
+            font-size:14px
+        }
+        .cizgi{
+            width:100%;
+            height: 2px;
+            background-color:black
+        }
+        .serino{
+            font-weight: 500;
+            font-size:12px
+        }
+        .egik{
+            font-style: italic;
+            font-size:12px
+        }
+        .mt-3{
+            margin-top:10px
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="row sabitWidth">
+            <div class="cizgi"></div>
+        </div>
+
+        <div class="row sabitWidth">
+            <div class="sabitWidth">
+                <img id="barcode" class="m-0">
+            </div>
+        </div>
+
+        <div class="row sabitWidth">
+            <div class="cizgi"></div>
+        </div>
+        
+
+        <div class="row sabitWidth">
+            <div class="buyukbaslik">
+                YenimahalleYenimahalle / ANKARA
+            </div>
+        </div>
+
+        <div class="row sabitWidth">
+            <div class="cizgi"></div>
+        </div>
+
+        <div class="row sabitWidth mt-3">
+            <div class="col-8">
+                <strong>GÖNDEREN:</strong><span class="gonderen egik">
+                    Batısitesi mah. Tahsin Kahraman Cad. No: 105-107 Gersan / Batıkent /ANKARA
+                </span>
+            </div>
+        </div>
+
+        <div class="row sabitWidth mt-3">
+            <div class="">
+                <strong>ALICI:</strong><span class="gonderen egik">
+                    Batısitesi mah. Tahsin Kahraman Cad. No: 105-107 Gersan / Batıkent /ANKARA
+                </span>
+            </div>
+        </div>
+        <div class="row sabitWidth mt-3">
+            <div class="">
+                <strong>GSM:</strong><span class="gonderenGsm egik">5532123812
+                   </span>
+            </div>
+        </div> 
+
+        <div class="row sabitWidth mt-3">
+            <div class="cizgi"></div>
+        </div>
+
+
+        <div class="row sabitWidth mt-2">
+            <div class="serino">
+                Firma No: 100 || Seri No: 23
+            </div>
+        </div>
+
+        <div class="row sabitWidth mt-2">
+            <div class="sabitWidth cizgi"></div>
+        </div>
+        <div class="row sabitWidth mt-2">
+            <div class="serino">
+                20.11.2020 23:04:10
+            </div>
+        </div>
+
+        <div class="row sabitWidth mt-2">
+            <div class="sabitWidth cizgi"></div>
+        </div>
+    </div>
+
+  </body>
 </html>
+
+
+
+   
+    <script>
+    JsBarcode("#barcode", "JK100000000");
+  </script>
